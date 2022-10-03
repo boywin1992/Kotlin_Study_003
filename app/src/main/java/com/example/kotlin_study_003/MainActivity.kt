@@ -4,9 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 
-// 확장 함수 extension function
-// :
-//
 /*
 확장 함수 extension function
 상송하기 않고 클래스 외부에서 멤버함수를 추가하는 기능
@@ -15,7 +12,7 @@ String 클래스는 open 키워드가 붙어있지 않다.
 멤버함수를 추가할 수가 없다.
 코틀린 내장된 클래스는 사용자가 마음대로 멤버함수를 추가할 수 없다.
 
-확장 함수를 이용하면 상송 없이 클래스 외부에서 멤버함수를 추가할 수 있다.
+확장 함수를 이용하면 상속 없이 클래스 외부에서 멤버함수를 추가할 수 있다.
  */
 
 // 문자열이 숫자로만 이루어져 있는지 판단하는 함수
