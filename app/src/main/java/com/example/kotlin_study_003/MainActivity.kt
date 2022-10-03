@@ -6,7 +6,7 @@ import android.util.Log
 
 /*
 확장 함수 extension function
-상송하기 않고 클래스 외부에서 멤버함수를 추가하는 기능
+상속하기 않고 클래스 외부에서 멤버함수를 추가하는 기능
 String 클래스는 open 키워드가 붙어있지 않다.
 따라서 상석을 받을 수 없다.
 멤버함수를 추가할 수가 없다.
@@ -31,8 +31,6 @@ fun String.isNumber(): Boolean {
 확장 프로퍼티 extension property
 확장 프로퍼티에는 field 가 존재하지 않는다.
  */
-
-var j = 0
 val String.isLongLength: Boolean
     get() = this.length >= 5
 
@@ -42,13 +40,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Log.i("hsson", "isNumber() = ${"12345".isNumber()}")
-        // result : true
+        // result : isNumber() = true
         Log.i("hsson", "isNumber() = ${"123사오".isNumber()}")
-        // result : false
+        // result : isNumber() = false
 
         Log.i("hsson", "isLongLength() = ${"1234567".isLongLength}")
-        // result : true
+        // result : isLongLength() = true
         Log.i("hsson", "isLongLength() = ${"123".isLongLength}")
-        // result : false
+        // result : isLongLength() = false
     }
 }
